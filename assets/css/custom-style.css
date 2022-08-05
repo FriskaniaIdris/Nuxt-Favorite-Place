@@ -1,0 +1,138 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap';
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar .main-navbar {
+  width: 150px;
+  height: 100vh;
+  background-color: #313541;
+  position: fixed;
+}
+.navbar .main-navbar .main-navbar-item {
+  width: 150px;
+  height: 125px;
+  position: relative;
+  color: #8298a0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
+.navbar .main-navbar .main-navbar-item img {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar .main-navbar .main-navbar-item label {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.navbar .main-navbar .main-navbar-item:hover {
+  color: #ffffff;
+}
+.navbar .main-navbar .active {
+  color: #ffffff !important;
+  background-color: #72cdd2;
+}
+.navbar .browse-detail-navbar {
+  width: 350px;
+  height: 100vh;
+  left: 150px;
+  background-color: #282c37;
+  position: fixed;
+  display: inline-block;
+}
+.navbar .browse-detail-navbar .filter {
+  padding: 40px 24px;
+}
+.navbar .browse-detail-navbar .filter select {
+  background-color: #282c37;
+  width: 100%;
+  padding: 14px 36px;
+  border: 1px solid #1c1f27;
+  color: #8298a0;
+}
+.navbar .browse-detail-navbar .menu-detail-list {
+  padding: 12px 24px;
+}
+.navbar .browse-detail-navbar .menu-detail-list li {
+  cursor: pointer;
+  padding: 14px 35px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #1c1f27;
+}
+.navbar .browse-detail-navbar .menu-detail-list li:hover {
+  background-color: #1c1f27;
+}
+.navbar .browse-detail-navbar .menu-detail-list .active {
+  color: #92d72e !important;
+  background-color: #1c1f27;
+}
+
+.top-navbar {
+  width: calc(100vw - 500px);
+  padding: 45px 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 500px;
+  background-color: #f4f7fa;
+}
+.top-navbar .title {
+  color: #282c37;
+  font-size: 24px;
+}
+.top-navbar .left-menu {
+  display: flex;
+}
+.top-navbar .left-menu .main-navbar-icon {
+  margin: 0px 11px;
+  position: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.GMap {
+  width: calc(100vw - 500px);
+  height: calc(100vh - 125px);
+  margin-left: 500px;
+  margin-top: 125px;
+  position: absolute;
+}
+.GMap .GMap__Wrapper {
+  height: calc(100vh - 125px) !important;
+}
+
+.detail-right-navbar {
+  position: absolute;
+  right: 0px;
+  top: 125px;
+  height: calc(100vh - 125px);
+  width: 350px;
+  background-color: #313541;
+}
+.detail-right-navbar .place-label {
+  font-size: 24px;
+  padding: 16px 36px;
+  color: #FFFFFF;
+  background-color: #72cdd2;
+}
+.detail-right-navbar .description {
+  color: #c2c2c3;
+  padding: 25px 36px;
+}
+.detail-right-navbar .description img {
+  margin-top: 46px;
+}
+.detail-right-navbar .description img:last-child {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=custom-style.css.map */

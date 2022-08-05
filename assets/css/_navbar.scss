@@ -1,0 +1,72 @@
+.navbar{
+  .main-navbar{
+    width: 150px;
+    height: 100vh;
+    background-color: $navbar-main-bg;
+    position: fixed;
+    .main-navbar-item{
+      width: 150px;
+      height: 125px;
+      position: relative;
+      color: $navbar-main-text;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+      display: inline-block;
+      img{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      label{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+      &:hover{
+        color: $navbar-main-text-active;
+      }
+    }
+    .active{
+      color: $navbar-main-text-active !important;
+      background-color: $navbar-main-active-menu;
+    }
+  }
+  .browse-detail-navbar{
+    width: 350px;
+    height: 100vh;
+    left: 150px;
+    background-color: $navbar-detail-bg;
+    position: fixed;
+    display: inline-block;
+    .filter{
+      select{
+        background-color: $navbar-detail-bg;
+        width: 100%;
+        padding: 14px 36px;
+        border: 1px solid $navbar-text-active-bg;
+        color: $navbar-main-text;
+      }
+      padding: 40px 24px;
+    }
+    .menu-detail-list{
+      padding: 12px 24px;
+      li{
+        cursor: pointer;
+        padding: 14px 35px;
+        color: $navbar-text-header;
+        transition: all .3s ease-in-out;
+        &:hover{
+          background-color: $navbar-text-active-bg;
+        }
+        border-bottom: 1px solid $navbar-text-active-bg;
+      }
+      .active{
+        color: $navbar-text-active !important;
+        background-color: $navbar-text-active-bg;
+      }
+    }
+  }
+}

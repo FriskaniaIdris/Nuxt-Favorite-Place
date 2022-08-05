@@ -1,0 +1,23 @@
+.top-navbar{
+  width: calc(100vw - 500px);
+  padding: 45px 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 500px;
+  background-color: $top-navbar-bg;
+  .title{
+    color: $top-navbar-text;
+    font-size: 24px;
+  }
+  .left-menu{
+    display: flex;
+    .main-navbar-icon{
+      margin: 0px 11px;
+      position: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

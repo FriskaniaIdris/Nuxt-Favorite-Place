@@ -1,0 +1,24 @@
+.detail-right-navbar{
+  position: absolute;
+  right: 0px;
+  top: 125px;
+  height: calc(100vh - 125px);
+  width: 350px;
+  background-color: $right-bar-bg;
+  .place-label{
+    font-size: 24px;
+    padding: 16px 36px;
+    color: $right-bar-header-text;
+    background-color: $right-bar-header-text-bg;
+  }
+  .description{
+    color: $right-bar-text;
+    padding: 25px 36px;
+    img{
+      margin-top: 46px;
+    }
+    img:last-child{
+      margin-top: 25px;
+    }
+  }
+}
